@@ -34,10 +34,8 @@ def skills(skill):
         if skill in candidate_skills:
             str_candidates += f"{candidate['name']} \n{candidate['position']} \n{candidate['skills']} \n\n"
     str_candidates += '</pre>'
-
-    # str_candidates = f"<img src={candidate['picture']}></img> <br><br>{candidate['name']} <br>{candidate['position']} <br>{candidate['skills']} <br><br>"
-
+    
     return str_candidates
 
 
-app.run(debug=True)
+app.run()
